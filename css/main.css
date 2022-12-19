@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: auto;
+    height: 100vh;
+}
+
+header{
+    background-color: green;
+    max-width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo{
+    position: absolute;
+}
+
+.logo a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: Helvetica;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 110%;
+}
+
+ul li{
+    list-style: none; 
+    padding: 1rem;
+}
+
+ul li a{
+    text-decoration: none;
+    color: aliceblue;
+} 
+
+span{
+    color: aliceblue;
+    font-weight: bold;
+    position: absolute;
+    font-size: 300%; 
+} 
+
+/* What We Offer*/
+
+.services {
+    background-image: url("../images/services.webp");
+    /* Source URL: https://unsplash.com/photos/WFsNCIn8OF4
+    Published by Candid on July 30, 2019*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    position: relative;
+    opacity: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-container {
+    display: grid;
+    position: relative;
+}
+
+figure img{
+    max-width: 60%;
+    height: auto;
+}
+
+.services-container li{
+    padding: 2rem;
+    text-align: center;
+} 
+
+.services-container a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;  
+}
+
+.services-container a:hover{
+    color: green;
+}
+
+/* Meet Our Team */
+
+.team{
+    background-image: url("../images/grinningwoman.webp");
+    /* Source URL: https://unsplash.com/photos/1AhGNGKuhR0
+    Published by Lesly Juarez on March 12, 2017 */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    position: relative;
+    opacity: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2rem;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+[class^="staff0"] {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+}
+
+[class^="staff0"] figure img{
+    max-width: 10rem;
+    height: 15rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+}
+
+[class^="staff0"] h5{
+    font-size: 1.2rem;
+}
+
+[class^="staff0"] p{
+    text-align: center;
+} 
+
+/* Where to find us */
+
+.location {
+    background-image: url("../images/brushes.webp");
+    /* Source URL: https://unsplash.com/photos/rCT928GIboM
+    Published by Superkitina on March 28, 2019 */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    position: relative;
+    opacity: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.map{
+    margin: auto;
+    position: relative;
+}
+
+.map iframe{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.contact{
+    text-align: center;
+    margin: auto;
+    font-size: 2rem;
+    line-height: 5rem;
+}
+
+footer{
+    background-color: rgb(43, 43, 43);
+    max-width: 100%;
+    color: aliceblue;
+    padding: 1rem;
+    font-size: 120%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    font-style: italic;
+}
+
+.links{
+    position: relative;
+    text-align: end;
+}
+
+.links a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 1.5rem;
+}
+
+.links a:hover{
+    color: green;
+}
+
+/* Media Queries */
+
+/* Desktop/Laptops */
+@media screen and (max-width: 1920px) and (min-width: 1281px){
+    
+    ul li a:hover{
+        color: greenyellow;
+    }
+
+    .services{
+        height: 35rem;
+    }
+
+    .services-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    figure img:hover{
+        opacity: 90%;
+    }
+
+    .team{
+        height: 35rem;
+    }
+
+    .location{
+        height: 35rem;
+    }
+
+    footer{
+        height: 8rem;
+    }
+
+    .map iframe{
+        width: 350px;
+        height: 350px;
+    } 
+}
+
+/* Tablet */
+@media screen and (max-width: 1280px) and (min-width: 461px){
+
+    .services{
+        height: 20rem;
+    }
+
+    .services-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        position: relative;
+    }
+
+    .team{
+        height: 20rem;
+    }
+
+    .team-container{
+        margin: auto;
+        gap: 0;
+    }
+
+    .team-container figure{
+        text-align: center;
+    }
+
+    .text h5{
+        text-align: center;
+    }
+
+    [class^="staff0"] {
+        display: flex;
+        flex-direction: column;
+   }
+
+    .location{
+        height: 20rem;
+    }
+
+    .map iframe{
+        width: 350px;
+        height: 350px;
+    } 
+
+    footer{
+        font-size: 0.8rem;
+        height: 5rem;
+    }
+
+    .links a{
+        padding: 0.5rem;
+    }
+   
+}
+
+/* Phone */
+@media screen and (max-width: 460px){
+   
+    nav ul li a{
+        font-size: 78%;
+    } 
+    
+    .services{
+        height: 20rem;
+    }
+
+    .services-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        position: relative;
+    }
+
+    .services-container figure img{
+        max-width: 100%;
+    }
+
+    .team{
+        height: 20rem;
+    }
+
+    .team-container{
+        margin: auto;
+        gap: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .team-container figure{
+        text-align: center;
+    }
+
+    .text h5{
+        text-align: center;
+    }
+
+    [class^="staff0"] {
+        display: flex;
+        flex-direction: column;
+        padding: 3%;
+   }
+
+    .location{
+        height: 20rem;
+    }
+
+    .map iframe{
+        width: 350px;
+        height: 350px;
+    } 
+
+    footer{
+        font-size: 0.8rem;
+        height: 5rem;
+    }
+    
+    footer span{
+        width: 50%;
+    }
+
+    .links{
+        width: 50%;
+    }
+
+    .links a{
+        padding: 2%;
+    }
+} 
