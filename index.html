@@ -9,18 +9,22 @@
     <link rel="icon" href="images/coca-leaves.png">
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="logo">
-            <img src="/ResponsiveWeb/images/coca-leaves.png" alt="smiling woman"/>
+            <img src="/ResponsiveWeb/images/coca-leaves.png" alt="smiling woman" loading="lazy"/>
             <a href="#">Kale Dentistry</a>
         </div>
         <nav>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
+            <a href="#about">About</a>
+            <a href="#services-wrapper">Services</a>
+            <a href="#contact">Contact</a>
         </nav> 
     </header>
     <main>
+        <div class="backHome">
+            <img src="./images/up-arrow.png" onClick="window.location.href='#home'"/>
+        </div>
+
         <section class="header-banner-wrapper">
             <div class="header-banner">
                 <div class="opening-hours">
@@ -45,7 +49,7 @@
                             <li>Closed</li>
                         </ul>
                     </div>
-                    <button class="enquire-button">Enquire</button>
+                    <button class="enquire-button" onClick="window.location.href='#contact'">Enquire</button>
                 </div>
                 <div class="welcome">
                     <h2>WELCOME TO</h2>
@@ -62,14 +66,14 @@
             </div>
         </section>
         
-        <section class="about">
+        <section class="about" id="about">
             <div class="about-title">
                 <h4>Our Story</h4>
             </div>
-            <img src="/ResponsiveWeb/images/watermelonWEB.webp" alt="woman holding sliced watermelon"/>
+            <img src="/ResponsiveWeb/images/watermelonWEB.webp" alt="woman holding sliced watermelon" loading="lazy"/>
             <div class="about-bio">
                 <p>At Kale Dentistry, we believe in providing more than just dental care. Our team of experienced professionals is dedicated to building strong, lasting relationships with our patients by creating a comfortable and welcoming environment. With the latest techniques and technologies, you can trust that you are in good hands. Choose Kale Dentistry for a brighter smile and a happier life.</p>
-                <button>Meet The Team</button>
+                <button onClick="window.location.href='#team'">Meet The Team</button>
             </div>
         </section>
 
@@ -78,65 +82,65 @@
             <span class="author">- Terry Fisher</span>
         </div>
 
-        <section class="services-wrapper">
+        <section class="services-wrapper" id="services-wrapper">
             <div class="services-title">
                 <h4>Our Services</h4>
             </div>
             <ul class="services-container">
                 <li class="dental-box-1">
-                    <img class="box-image" src="./images/generaldental-zoomin.webp" />
+                    <img class="box-image" src="./images/generaldental-zoomin.webp" loading="lazy"/>
                     <div class="box-banner">
                         <span class="box-span">General Dental</span>
-                        <img src="/ResponsiveWeb/images/right.png" />
+                        <img src="/ResponsiveWeb/images/right.png" loading="lazy"/>
                     </div>
                 </li>
                 <li class="dental-box-2">
-                    <img class="box-image" src="./images/newhyg.webp" />
+                    <img class="box-image" src="./images/newhyg.webp" loading="lazy"/>
                     <div class="box-banner">
                         <span class="box-span">Dental Hygienist</span>
-                        <img src="/ResponsiveWeb/images/right.png" />
+                        <img src="/ResponsiveWeb/images/right.png" loading="lazy"/>
                     </div>
                 </li>
                 <li class="dental-box-3">
-                    <img class="box-image" src="./images/cosmetic.webp" />
+                    <img class="box-image" src="./images/cosmetic.webp" loading="lazy"/>
                     <div class="box-banner">
                         <span class="box-span">Cosmetic</span>
-                        <img src="/ResponsiveWeb/images/right.png" />
+                        <img src="/ResponsiveWeb/images/right.png" loading="lazy"/>
                     </div>
                 </li>
                 <li class="dental-box-4">
-                    <img class="box-image" src="./images/chair.webp" />
+                    <img class="box-image" src="./images/chair.webp" loading="lazy"/>
                     <div class="box-banner">
                         <span class="box-span">Sedation</span>
-                        <img src="/ResponsiveWeb/images/right.png" />
+                        <img src="/ResponsiveWeb/images/right.png" loading="lazy"/>
                     </div>
                 </li>
                 <li class="dental-box-5">
-                    <img class="box-image" src="./images/jaw.webp" />
+                    <img class="box-image" src="./images/jaw.webp" loading="lazy"/>
                     <div class="box-banner">
                         <span class="box-span">TMJ</span>
-                        <img src="/ResponsiveWeb/images/right.png" />
+                        <img src="/ResponsiveWeb/images/right.png" loading="lazy"/>
                     </div>
                 </li>
                 <li class="dental-box-6">
-                    <img class="box-image" src="./images/implants.webp" />
+                    <img class="box-image" src="./images/implants.webp" loading="lazy"/>
                     <div class="box-banner">
                         <span class="box-span">Dental Implants</span>
-                        <img src="/ResponsiveWeb/images/right.png" />
+                        <img src="/ResponsiveWeb/images/right.png" loading="lazy"/>
                     </div>
                 </li>
                 <li class="dental-box-7">
-                    <img class="box-image" src="./images/whitening.webp" />
+                    <img class="box-image" src="./images/whitening.webp" loading="lazy"/>
                     <div class="box-banner">
                         <span class="box-span">Teeth Whitening</span>
-                        <img src="/ResponsiveWeb/images/right.png" />
+                        <img src="/ResponsiveWeb/images/right.png" loading="lazy"/>
                     </div>
                 </li>
                 <li class="dental-box-8">
-                    <img class="box-image" src="./images/invis.webp" />
+                    <img class="box-image" src="./images/invis.webp" loading="lazy"/>
                     <div class="box-banner">
                         <span class="box-span">Braces</span>
-                        <img src="/ResponsiveWeb/images/right.png" />
+                        <img src="/ResponsiveWeb/images/right.png" loading="lazy"/>
                     </div>
                 </li>
             </ul>
@@ -147,8 +151,8 @@
             <span class="author">- Joel McKann</span>
         </div>
         
-        <section class="contact">
-            <img src="./images/grinningwoman.webp" alt="grinning woman"/>
+        <section class="contact" id="contact">
+            <img src="./images/grinningwoman.webp" alt="grinning woman" loading="lazy"/>
             <div class="contact-title">
                 <h4>Contact Us</h4>
             </div>
@@ -171,49 +175,49 @@
             <span class="author">- Barbara Swindleton</span>
         </div>
 
-        <section class="team">
+        <section class="team" id="team">
             <div class="team-title">
                 <h4>Our Team</h4>
             </div>
             <div class="team-container">
                 <ul class="team-wrapper">
                     <li class="staff01">
-                        <img src="./images/staff1.webp" />
+                        <img src="./images/staff1.webp" loading="lazy"/>
                         <div class="staff-bio">
                             <span>Dr. Alana Grey</span>
                             <p>Dr. Grey is the owner and lead dentist at Kale Dentistry. With 22 years of experience, she provides top-notch dental care and prioritizes patient comfort. She stays up to date with the latest advancements in the field.</p>
                         </div>
                     </li>
                     <li class="staff02">
-                        <img src="./images/staff5.webp" />
+                        <img src="./images/staff5.webp" loading="lazy"/>
                         <div class="staff-bio">
                             <span>Dr. Mitchell Harris</span>
                             <p>Dr. Harris is a highly skilled dentist with 12 years of experience. He prioritizes patient comfort and offers personalized treatment plans with a focus on preventive care. He stays current with the latest dental advancements to provide effective and efficient care.</p>
                         </div>
                     </li>
                     <li class="staff03">
-                        <img src="./images/staff3.webp" />
+                        <img src="./images/staff3.webp" loading="lazy"/>
                         <div class="staff-bio">
                             <span>Megan Smith</span>
                             <p>As an assistant dentist, Megan brings 5 years of experience to the dental chair. She is known for her gentle touch and commitment to patient comfort. With a focus on delivering effective and efficient care.</p>
                         </div>
                     </li>
                     <li class="staff04">
-                        <img src="./images/staff4.webp" />
+                        <img src="./images/staff4.webp" loading="lazy"/>
                         <div class="staff-bio">
                             <span>Tina Nguyen</span>
                             <p>Tina Nguyen is a motivated professional with experience in dentistry. With a focus on TMJ correction, she strives for excellence in her work. Tina is dedicated to her goals and constantly seeks new challenges.</p>
                         </div>
                     </li>
                     <li class="staff05">
-                        <img src="./images/newstaff.webp" />
+                        <img src="./images/newstaff.webp" loading="lazy"/>
                         <div class="staff-bio">
                             <span>Wesley Spencer</span>
                             <p>Wes is a friendly and professional receptionist with 4 years of experience in customer service. He is dedicated to providing a warm and welcoming experience for all visitors and clients.</p>
                         </div>
                     </li>
                     <li class="staff06">
-                        <img src="./images/staff6.webp" />
+                        <img src="./images/staff6.webp" loading="lazy"/>
                         <div class="staff-bio">
                             <span>Kayla Pearson</span>
                             <p>Kayla, RDH, is a licensed dental hygienist with 3 years of experience in the field. With a passion for preventive care, Kayla is dedicated to helping her patients achieve and maintain optimal oral health.</p>
@@ -259,6 +263,6 @@
         </div>
         <div class="copyright">© Kale Dentistry 2023</div>
     </footer>
-    
+
 </body>
 </html>

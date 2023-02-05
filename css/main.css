@@ -5,9 +5,23 @@
     font-family: 'Nova Slim';
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: 'Nova Slim';
     src: url(/ResponsiveWeb/fonts/NovaSlim-Regular.ttf);
+}
+
+.backHome img{
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    cursor: pointer;
 }
 
 header{
@@ -98,13 +112,22 @@ header nav a:hover{
     border-radius: 50px;
     border: 0;
     font-size: 20px;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
 .welcome button:hover{
     cursor: pointer;
-    background-color: rgb(170, 194, 214);
+    background: linear-gradient(to right, #58e966 50%, white 0%);
+    background-size: 200% 100%;
+    background-position: right;
+    animation: makeItfadeIn 2s forwards;
 }
+
+@keyframes makeItfadeIn {
+    100% {
+      background-position: left;
+    }
+  }
 
 .opening-hours{
     background-color: rgba(255, 255, 255, 0.7);
@@ -115,6 +138,7 @@ header nav a:hover{
     height: 400px;
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
 .opening-hours h3{
@@ -343,10 +367,11 @@ header nav a:hover{
     height: 350px;
     top: 150px;
     position: relative;
-    background: white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     list-style: none;
+    overflow: hidden;
 }
 
 .box-image{
@@ -355,6 +380,7 @@ header nav a:hover{
     left: 40px;
     top: 1462px;
     border-radius: 20px 20px 0px 0px;
+    opacity: 90%;
 }
 
 .box-banner{
@@ -368,15 +394,30 @@ header nav a:hover{
 .box-banner img{
     width: 25px;
     height: 25px;
+    top: 10px;
+    position: relative;
+    transition: transform 2s;
 }
 
 .box-span{
     font-size: 20px;
+    top: 10px;
+    position: relative;
 }
 
 [class^="dental-box-"]:hover{
     cursor: pointer;
+    background: linear-gradient(to right, #69C472 50%, transparent 0%);
+    background-size: 200% 100%;
+    background-position: right;
+    animation: makeItfadeIn 2s forwards;
 }
+
+@keyframes makeItfadeIn {
+    100% {
+      background-position: left;
+    }
+  }
 
 /* Contact */
 
