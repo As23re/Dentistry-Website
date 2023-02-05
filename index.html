@@ -7,198 +7,258 @@
     <title>Kale Dentistry</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="images/coca-leaves.png">
-    <!-- Source URL: https://www.flaticon.com/premium-icon/coca-leaves_3196633?term=coca%20leaves&page=1&position=3&page=1&position=3&related_id=3196633&origin=tag 
-    Published by Freepik -->
 </head>
 <body>
     <header>
         <div class="logo">
+            <img src="/ResponsiveWeb/images/coca-leaves.png" alt="smiling woman"/>
             <a href="#">Kale Dentistry</a>
         </div>
         <nav>
-            <ul>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Dental Services</a>
-                </li>
-                <li>
-                    <a href="#">Make a Booking</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
         </nav> 
     </header>
     <main>
-        <section>
-            <div class="services">
-                <span>What We Offer</span>
+        <section class="header-banner-wrapper">
+            <div class="header-banner">
+                <div class="opening-hours">
+                    <h3>Opening Hours</h3>
+                    <div class="openinghours-content">
+                        <ul class="weekdays">
+                            <li>Monday</li>
+                            <li>Tuesday</li>
+                            <li>Wednesday</li>
+                            <li>Thursday</li>
+                            <li>Friday</li>
+                            <li>Saturday</li>
+                            <li>Sunday</li>
+                        </ul>
+                        <ul class="hours">
+                            <li>7am - 7pm</li>
+                            <li>7am - 7pm</li>
+                            <li>7am - 7pm</li>
+                            <li>7am - 7pm</li>
+                            <li>7am - 5pm</li>
+                            <li>9am - 5pm</li>
+                            <li>Closed</li>
+                        </ul>
+                    </div>
+                    <button class="enquire-button">Enquire</button>
+                </div>
+                <div class="welcome">
+                    <h2>WELCOME TO</h2>
+                    <h1>KALE DENTISTRY</h1>
+                    <button>BOOK AN APPOINTMENT</button>
+                </div>
+            </div>
+            <div class="contact-bar">
+                <span>(+64) 9 123 4567</span>
+                <span>|</span>
+                <span>kaledentistry@gmail.co.nz</span>
+                <span>|</span>
+                <span>325 Manukau Road, Epsom, Auckland 1023, New Zealand</span>
+            </div>
+        </section>
+        
+        <section class="about">
+            <div class="about-title">
+                <h4>Our Story</h4>
+            </div>
+            <img src="/ResponsiveWeb/images/watermelonWEB.webp" alt="woman holding sliced watermelon"/>
+            <div class="about-bio">
+                <p>At Kale Dentistry, we believe in providing more than just dental care. Our team of experienced professionals is dedicated to building strong, lasting relationships with our patients by creating a comfortable and welcoming environment. With the latest techniques and technologies, you can trust that you are in good hands. Choose Kale Dentistry for a brighter smile and a happier life.</p>
+                <button>Meet The Team</button>
+            </div>
+        </section>
+
+        <div class="testimonial-1">
+            <span>"Kale Dentistry is the best! Friendly staff and great service. Highly Recommend."</span>
+            <span class="author">- Terry Fisher</span>
+        </div>
+
+        <section class="services-wrapper">
+            <div class="services-title">
+                <h4>Our Services</h4>
             </div>
             <ul class="services-container">
-                <li>
-                    <figure>
-                        <picture>
-                            <source media="(max-width: 460px)" srcset="images/generaldental-zoomin.webp"> 
-                            <source media="(min-width: 461px)" srcset="images/generaldental.webp">
-                            <img src="images/generaldental.webp" alt="General Dental">
-                            <!-- Source URL: https://unsplash.com/photos/6SAzfKla3IE
-                            Published by Quang Tri Nguyen on May 21, 2021 -->
-                        </picture>
-                    </figure>
-                   <a href="#">General Dental</a>
+                <li class="dental-box-1">
+                    <img class="box-image" src="./images/generaldental-zoomin.webp" />
+                    <div class="box-banner">
+                        <span class="box-span">General Dental</span>
+                        <img src="/ResponsiveWeb/images/right.png" />
+                    </div>
                 </li>
-                <li>
-                    <figure>
-                        <img src="images/newhyg.webp" alt=" Dental Hygienist">
-                        <!-- Source URL: https://unsplash.com/photos/gHdVUGAJYGo
-                        Published by Yusuf Belek on November 25, 2020 -->
-                    </figure>
-                    <a href="#">Dental Hygienist</a>
+                <li class="dental-box-2">
+                    <img class="box-image" src="./images/newhyg.webp" />
+                    <div class="box-banner">
+                        <span class="box-span">Dental Hygienist</span>
+                        <img src="/ResponsiveWeb/images/right.png" />
+                    </div>
                 </li>
-                <li>
-                    <figure>
-                        <img src="images/cosmetic.webp" alt=" Cosmetic Dental">
-                        <!-- Source URL: https://unsplash.com/photos/Er3c9JVvUZM
-                        Published by Diana Polekhina on February 3, 2021 -->
-                    </figure>
-                    <a href="#">Cosmetic Dental</a>
+                <li class="dental-box-3">
+                    <img class="box-image" src="./images/cosmetic.webp" />
+                    <div class="box-banner">
+                        <span class="box-span">Cosmetic</span>
+                        <img src="/ResponsiveWeb/images/right.png" />
+                    </div>
                 </li>
-                <li>
-                    <figure>
-                        <img src="images/chair.webp" alt="Sedation Dental">
-                        <!-- Source URL: https://unsplash.com/photos/XJptUS8nbhs
-                        Published by Atikah Akhtar on August 24, 2020 -->
-                    </figure>
-                    <a href="#">Sedation Dental</a>
+                <li class="dental-box-4">
+                    <img class="box-image" src="./images/chair.webp" />
+                    <div class="box-banner">
+                        <span class="box-span">Sedation</span>
+                        <img src="/ResponsiveWeb/images/right.png" />
+                    </div>
                 </li>
-                <li>
-                    <figure>
-                        <img src="images/jaw.webp" alt="TMJ">
-                        <!-- Source URL: https://unsplash.com/photos/NKTJCOHzrUM
-                        Published by Engin Akyurt on October 18, 2020 -->
-                    </figure>
-                    <a href="#">TMJ</a>
+                <li class="dental-box-5">
+                    <img class="box-image" src="./images/jaw.webp" />
+                    <div class="box-banner">
+                        <span class="box-span">TMJ</span>
+                        <img src="/ResponsiveWeb/images/right.png" />
+                    </div>
                 </li>
-                <li>
-                    <figure>
-                        <img src="images/implants.webp" alt="Dental Implants">
-                        <!-- Source URL: https://unsplash.com/photos/W9YEY6G8LVM 
-                        Published by Johnathan Borba on June 25, 2020-->
-                    </figure>
-                    <a href="#">Dental Implants</a>
+                <li class="dental-box-6">
+                    <img class="box-image" src="./images/implants.webp" />
+                    <div class="box-banner">
+                        <span class="box-span">Dental Implants</span>
+                        <img src="/ResponsiveWeb/images/right.png" />
+                    </div>
                 </li>
-                <li>
-                    <figure>
-                        <img src="images/whitening.webp" alt="Teeth Whitening">
-                        <!-- Source URL: https://unsplash.com/photos/4u2fG9mqGvQ
-                        Published Enis Yavuz by May 12, 2021 -->
-                    </figure>
-                    <a href="#">Teeth Whitening</a>
+                <li class="dental-box-7">
+                    <img class="box-image" src="./images/whitening.webp" />
+                    <div class="box-banner">
+                        <span class="box-span">Teeth Whitening</span>
+                        <img src="/ResponsiveWeb/images/right.png" />
+                    </div>
                 </li>
-                <li>
-                    <figure>
-                        <img src="images/invis.webp" alt="Braces">
-                        <!-- Source URL: https://unsplash.com/photos/fmB7IdFjhTM
-                        Published by Diana Polekhina on January 5, 2021 -->
-                    </figure>
-                    <a href="#">Braces</a>
+                <li class="dental-box-8">
+                    <img class="box-image" src="./images/invis.webp" />
+                    <div class="box-banner">
+                        <span class="box-span">Braces</span>
+                        <img src="/ResponsiveWeb/images/right.png" />
+                    </div>
                 </li>
             </ul>
         </section>
-        <section>
-            <div class="team">
-                <span>Meet Our Team</span>
+
+        <div class="testimonial-2">
+            <span>"The dentists are knowledgeable and the facilities are modern and clean."</span>
+            <span class="author">- Joel McKann</span>
+        </div>
+        
+        <section class="contact">
+            <img src="./images/grinningwoman.webp" alt="grinning woman"/>
+            <div class="contact-title">
+                <h4>Contact Us</h4>
+            </div>
+            <form class="contact-form">
+                <div class="names">
+                    <input type="text" class="firstname" placeholder="*First Name">
+                    <input type="text" class="surname" placeholder="*Last Name">
+                </div>
+                <div class="form-rest">
+                    <input type="text" class="phone" placeholder="*Phone Number">
+                    <input type="text" class="email" placeholder="*Email Address">
+                    <textarea placeholder="*Enter your message"></textarea>
+                </div>
+                <button class="submitButton">Submit</button>
+            </form>
+        </section>
+
+        <div class="testimonial-3">
+            <span>"I was a nervous wreck before my appointment at Kale Dentistry, but the staff put me at ease and took great care of me."</span>
+            <span class="author">- Barbara Swindleton</span>
+        </div>
+
+        <section class="team">
+            <div class="team-title">
+                <h4>Our Team</h4>
             </div>
             <div class="team-container">
-                <div class="staff01">
-                    <figure>
-                        <img src="images/staff1.webp" alt="Staff Member: Dr. Alana Grey">
-                        <!-- Source URL: https://unsplash.com/photos/Zz5LQe-VSMY
-                        Published by Stephanie Liverani on September 4, 2019 -->
-                    </figure>
-                    <div class="text">
-                        <h5>Dr. Alana Grey</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere itaque nihil unde, rem corporis iure consequatur amet doloribus id dolor tempora mollitia explicabo laboriosam autem minus commodi ex distinctio? Nemo voluptas distinctio veniam eaque? Rem praesentium molestiae, nesciunt soluta provident repellendus autem, cumque reiciendis, ea saepe ratione earum dignissimos quis?</p>
-                    </div>
-                </div>
-                <div class="staff02">
-                    <figure>
-                        <img src="images/staff5.webp" alt="Staff Member: Dr. Mitchell Harrison">
-                        <!-- Source URL: https://unsplash.com/photos/7YVZYZeITc8
-                        Published by Jurica Koletic on July 22, 2017 -->
-                    </figure>
-                    <div class="text">
-                        <h5>Dr. Mitchell Harris</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, voluptates perferendis. Nihil, aliquid? Voluptates ratione ab qui, quam error sapiente voluptas et dolores aspernatur officiis, dignissimos reiciendis, praesentium minus iusto temporibus. Cupiditate ducimus esse enim recusandae fugiat cum facilis voluptatibus magnam veniam, sed, et repellat dolor? Deserunt dolorem illum cum.</p>
-                    </div>
-                </div>
-                <div class="staff03">
-                    <figure>
-                        <img src="images/staff3.webp" alt="Staff Member: Megan Smith">
-                        <!-- Source URL: https://unsplash.com/photos/aoQ4DYZLE_E
-                        Published by Meritt Thomas on July 15, 2020 -->
-                    </figure>
-                    <div class="text">
-                        <h5>Megan Smith</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam provident ipsam molestiae necessitatibus harum, atque, deserunt cupiditate deleniti eum qui, facere saepe autem? Inventore provident officia exercitationem et, cumque praesentium reiciendis ad eos commodi, culpa reprehenderit quo numquam, quas qui alias consequatur cum at corporis voluptas! Quae asperiores neque magnam.</p>
-                    </div>
-                </div>
-                <div class="staff04">
-                    <figure>
-                        <img src="images/staff4.webp" alt="Staff Member: Tina Nguyen">
-                        <!-- Source URL: https://unsplash.com/photos/RIt88XBR3G0
-                        Published by Annika Palmari on February 7, 2020 -->
-                    </figure>
-                    <div class="text">
-                        <h5>Tina Nguyen</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt aliquam veniam debitis, officiis amet atque dignissimos odit maiores nostrum beatae qui, laboriosam at molestiae quasi numquam corrupti sed ratione nemo accusantium facilis dolorem cum a eligendi. Labore fugit rem incidunt ea soluta dolore, ipsa dignissimos excepturi unde quidem perspiciatis ullam?</p>
-                    </div>
-                </div>
-                <div class="staff05">
-                    <figure>
-                        <img src="images/newstaff.webp" alt="Staff Member: Wesley Spencer">
-                        <!-- Source URL: https://unsplash.com/photos/OhKElOkQ3RE
-                        Published by Ben Parker on July 13, 2018 -->
-                    </figure>
-                    <div class="text">
-                        <h5>Wesley Spencer</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, fuga quas. Ab quos corporis amet, labore sint saepe. Porro iste excepturi exercitationem animi illum aliquam, ad recusandae omnis eligendi provident non consequatur mollitia sed dolorum repudiandae expedita dolor repellendus ullam consectetur itaque sit maxime a ipsa? Eos dolore hic quaerat!</p>
-                    </div>
-                </div>
-                <div class="staff06">
-                    <figure>
-                        <img src="images/staff6.webp" alt="Staff Member: Kayla Pearson">
-                        <!-- Source URL: https://unsplash.com/photos/SJvDxw0azqw
-                        Published by Christina@wocintechchat.com on November 12, 2019 -->
-                    </figure>
-                    <div class="text">
-                        <h5>Kayla Pearson</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga fugiat hic eum asperiores, assumenda dolore. Mollitia inventore voluptates quas totam asperiores neque commodi quia, nesciunt dolorem ex harum vel ipsam ipsa maxime distinctio veniam sequi maiores ea! Optio odio quod exercitationem accusantium dolorem repellat? Quam odio voluptates cum magni alias.</p>
-                    </div>
-                </div>
+                <ul class="team-wrapper">
+                    <li class="staff01">
+                        <img src="./images/staff1.webp" />
+                        <div class="staff-bio">
+                            <span>Dr. Alana Grey</span>
+                            <p>Dr. Grey is the owner and lead dentist at Kale Dentistry. With 22 years of experience, she provides top-notch dental care and prioritizes patient comfort. She stays up to date with the latest advancements in the field.</p>
+                        </div>
+                    </li>
+                    <li class="staff02">
+                        <img src="./images/staff5.webp" />
+                        <div class="staff-bio">
+                            <span>Dr. Mitchell Harris</span>
+                            <p>Dr. Harris is a highly skilled dentist with 12 years of experience. He prioritizes patient comfort and offers personalized treatment plans with a focus on preventive care. He stays current with the latest dental advancements to provide effective and efficient care.</p>
+                        </div>
+                    </li>
+                    <li class="staff03">
+                        <img src="./images/staff3.webp" />
+                        <div class="staff-bio">
+                            <span>Megan Smith</span>
+                            <p>As an assistant dentist, Megan brings 5 years of experience to the dental chair. She is known for her gentle touch and commitment to patient comfort. With a focus on delivering effective and efficient care.</p>
+                        </div>
+                    </li>
+                    <li class="staff04">
+                        <img src="./images/staff4.webp" />
+                        <div class="staff-bio">
+                            <span>Tina Nguyen</span>
+                            <p>Tina Nguyen is a motivated professional with experience in dentistry. With a focus on TMJ correction, she strives for excellence in her work. Tina is dedicated to her goals and constantly seeks new challenges.</p>
+                        </div>
+                    </li>
+                    <li class="staff05">
+                        <img src="./images/newstaff.webp" />
+                        <div class="staff-bio">
+                            <span>Wesley Spencer</span>
+                            <p>Wes is a friendly and professional receptionist with 4 years of experience in customer service. He is dedicated to providing a warm and welcoming experience for all visitors and clients.</p>
+                        </div>
+                    </li>
+                    <li class="staff06">
+                        <img src="./images/staff6.webp" />
+                        <div class="staff-bio">
+                            <span>Kayla Pearson</span>
+                            <p>Kayla, RDH, is a licensed dental hygienist with 3 years of experience in the field. With a passion for preventive care, Kayla is dedicated to helping her patients achieve and maintain optimal oral health.</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
-        <section>
-            <div class="location">
-                <span>Where To Find Us</span>
-            </div>
-            <div class="location-container">
-                <div class="map">
-                    <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ-wu0rXtSDW0RJh09kGiyHxw&key=AIzaSyAuxjboSpjJCQcE_9Pi4YVF9Fe1osHZVsE"></iframe>
-                </div>
-            </div>
-        </section>
-    </main>
+
     <footer>
-        <p>© 2022 Kale Dentistry. All rights reserved.</p>
-        <nav class="links">
-            <a href="#">Privacy</a>
-            <a href="#">Contact</a>
-            <a href="#">Careers</a>
-        </nav>
+        <div class="footer-content">
+            <div class="information">
+                <div class="cancel-policy">
+                    <span>Cancellation Policy</span>
+                    <p>If you need to change an appointment, please call our office 24 hours prior or if emailing, please give us at least 48 hours notice as emails are not monitored 24/7, and not at all over weekends.</p>
+                    <p>Fees maybe charged for late cancellations and also failed appointments.</p>
+                </div>
+                <ul class="services-links">
+                    <li class="links-heading">Our Dental Services:</li>
+                    <li>General Dental</li>
+                    <li>Cosmetic Dental</li>
+                    <li>Dental Hygienist</li>
+                    <li>Sedation Dental</li>
+                    <li>Braces and Teeth Correction</li>
+                    <li>Teeth Whitening</li>
+                    <li>TMJ and Jaw Conditions</li>
+                    <li>Dental Implants</li>
+                </ul>
+                <div class="contact-links">
+                    <span>Contact Us:</span>
+                    <span>kaledentistry@gmail.co.nz</span>
+                    <span>(+64) 9 123 4567</span>
+                    <span>325 Manukau Road, Epsom, Auckland 1023, New Zealand</span>
+                    <span><a href="#">Careers</a></span>
+                </div>
+            </div>
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=325%20Manukau%20Road,%20Epsom,%20Auckland%201023&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br>
+                </div>
+            </div>
+           
+        </div>
+        <div class="copyright">© Kale Dentistry 2023</div>
     </footer>
+    
 </body>
 </html>
