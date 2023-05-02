@@ -3,4 +3,4 @@ Created a responsive landing page for a fake dental clinic using only HTML &amp;
 
 Please open with Live Server to view the website.
 
-*NOTE: Layout is currently being updated. It is NOT responsive in its current state. Future plans to deploy it once the update is finished.
+*NOTE: Layout is still being updated. Minor adjustments still needed for certain laptop sizes. Otherwise works on desktop, iPads, and mobile devices.
