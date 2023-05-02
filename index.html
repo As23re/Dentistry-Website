@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kale Dentistry</title>
-    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="icon" href="images/coca-leaves.png">
+    <link rel="stylesheet" href="./javascript/hamburger.js">
 </head>
 <body>
     <header id="home">
@@ -14,19 +16,31 @@
             <img src="./images/coca-leaves.png" alt="kale dentistry logo coca-leaves" loading="lazy"/>
             <a href="#">Kale Dentistry</a>
         </div>
-        <nav>
+        <div class="navbar">
+            <nav class="header-nav">
+                <a href="#about">About</a>
+                <a href="#services-wrapper">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <a href="javascript:void(0);" class="hamburger-icon"><img src="./images/hamburger.png"/></a>
+        </div>
+    </header>
+
+    <main>
+        <nav class="mobile-header-nav" style="display:none;">
             <a href="#about">About</a>
             <a href="#services-wrapper">Services</a>
             <a href="#contact">Contact</a>
-        </nav> 
-    </header>
-    <main>
+        </nav>
+        
         <div class="backHome">
             <img src="./images/up-arrow.png" onClick="window.location.href='#home'"/>
         </div>
 
         <section class="header-banner-wrapper">
             <div class="header-banner">
+                <button class="mobile-button">BOOK NOW</button>
+
                 <div class="opening-hours">
                     <h3>Opening Hours</h3>
                     <div class="openinghours-content">
@@ -51,27 +65,54 @@
                     </div>
                     <button class="enquire-button" onClick="window.location.href='#contact'">Enquire</button>
                 </div>
+
                 <div class="welcome">
                     <h2>WELCOME TO</h2>
                     <h1>KALE DENTISTRY</h1>
                     <button>BOOK AN APPOINTMENT</button>
                 </div>
             </div>
+
+            <ul class="mobile-contact-bar">
+                <li>(+64) 9 123 4567</li>
+                <li>kaledentistry@gmail.com</li>
+                <li>Manukau Road, Epsom, Auckland 1023</li>
+            </ul>
             <div class="contact-bar">
-                <!-- <span>(+64) 9 123 4567</span>
-                <span>|</span>
-                <span>kaledentistry@gmail.co.nz</span>
-                <span>|</span>
-                <span>325 Manukau Road, Epsom, Auckland 1023, New Zealand</span> -->
                 <span>(+64) 9 123 4567  |   kaledentistry@gmail.com |   Manukau Road, Epsom, Auckland 1023</span>
+            </div>
+
+            <div class="mobile-opening-hours">
+                <h3>Opening Hours</h3>
+                <div class="mobile-openinghours-content">
+                    <ul class="weekdays">
+                        <li>Monday</li>
+                        <li>Tuesday</li>
+                        <li>Wednesday</li>
+                        <li>Thursday</li>
+                        <li>Friday</li>
+                        <li>Saturday</li>
+                        <li>Sunday</li>
+                    </ul>
+                    <ul class="hours">
+                        <li>7am - 7pm</li>
+                        <li>7am - 7pm</li>
+                        <li>7am - 7pm</li>
+                        <li>7am - 7pm</li>
+                        <li>7am - 5pm</li>
+                        <li>9am - 5pm</li>
+                        <li>Closed</li>
+                    </ul>
+                </div>
+                <button class="mobile-enquire-button" onClick="window.location.href='#contact'">Enquire</button>
             </div>
         </section>
         
         <section class="about" id="about">
+            <img src="./images/watermelonWEB.webp" alt="woman holding sliced watermelon" loading="lazy"/>
             <div class="about-title">
                 <h4>Our Story</h4>
             </div>
-            <img src="./images/watermelonWEB.webp" alt="woman holding sliced watermelon" loading="lazy"/>
             <div class="about-bio">
                 <p>At Kale Dentistry, we believe in providing more than just dental care. Our team of experienced professionals is dedicated to building strong, lasting relationships with our patients by creating a comfortable and welcoming environment. With the latest techniques and technologies, you can trust that you are in good hands. Choose Kale Dentistry for a brighter smile and a happier life.</p>
                 <button onClick="window.location.href='#team'">Meet The Team</button>
@@ -167,7 +208,7 @@
                     <input type="text" class="email" placeholder="*Email Address">
                     <textarea placeholder="*Enter your message"></textarea>
                 </div>
-                <button class="submitButton">Submit</button>
+                <button class="submitButton">Send</button>
             </form>
         </section>
 
@@ -180,8 +221,8 @@
             <div class="team-title">
                 <h4>Our Team</h4>
             </div>
-            <div class="team-container">
-                <ul class="team-wrapper">
+            <div class="team-wrapper">
+                <ul class="team-container">
                     <li class="staff01">
                         <img src="./images/staff1.webp" loading="lazy"/>
                         <div class="staff-bio">
@@ -228,42 +269,42 @@
             </div>
         </section>
 
-    <footer>
-        <div class="footer-content">
-            <div class="information">
-                <div class="cancel-policy">
-                    <span>Cancellation Policy</span>
-                    <p>If you need to change an appointment, please call our office 24 hours prior or if emailing, please give us at least 48 hours notice as emails are not monitored 24/7, and not at all over weekends.</p>
-                    <p>Fees maybe charged for late cancellations and also failed appointments.</p>
-                </div>
-                <ul class="services-links">
-                    <li class="links-heading">Our Dental Services:</li>
-                    <li>General Dental</li>
-                    <li>Cosmetic Dental</li>
-                    <li>Dental Hygienist</li>
-                    <li>Sedation Dental</li>
-                    <li>Braces and Teeth Correction</li>
-                    <li>Teeth Whitening</li>
-                    <li>TMJ and Jaw Conditions</li>
-                    <li>Dental Implants</li>
+        <section class="footer">
+            <div class="footer-content">
+                <ul class="cancel-policy">
+                    <li>Cancellation Policy</li>
+                    <li>If you need to change an appointment, please call our office 24 hours prior or if emailing, please give us at least 48 hours notice as emails are not monitored 24/7, and not at all over weekends.</li>
+                    <li>Fees maybe charged for late cancellations and also failed appointments.</li>
                 </ul>
-                <div class="contact-links">
-                    <span>Contact Us:</span>
-                    <span>kaledentistry@gmail.co.nz</span>
-                    <span>(+64) 9 123 4567</span>
-                    <span>325 Manukau Road, Epsom, Auckland 1023, New Zealand</span>
-                    <span><a href="#">Careers</a></span>
-                </div>
+                <ul class="services-links">
+                    <li class="dental-services-titleN">Our Dental Services:</li>
+                    <li><a href="#">General Dental</a></li>
+                    <li><a href="#">Cosmetic Dental</a></li>
+                    <li><a href="#">Dental Hygienist</a></li>
+                    <li><a href="#">Sedation Dental</a></li>
+                    <li><a href="#">Braces and Teeth Correction</a></li>
+                    <li><a href="#">Teeth Whitening</a></li>
+                    <li><a href="#">TMJ and Jaw Conditions</a></li>
+                    <li><a href="#">Dental Implants</a></li>
+                </ul>
+                <ul class="contact-links">
+                    <li>Contact Us:</li>
+                    <li>kaledentistry@gmail.co.nz</li>
+                    <li>(+64) 9 123 4567</li>
+                    <li>325 Manukau Road, Epsom, Auckland 1023, New Zealand</li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=325%20Manukau%20Road,%20Epsom,%20Auckland%201023&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br>
+                    </div>
+                </div> 
             </div>
-            <div class="mapouter">
-                <div class="gmap_canvas">
-                    <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=325%20Manukau%20Road,%20Epsom,%20Auckland%201023&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br>
-                </div>
-            </div>
-           
-        </div>
+        </section>
+    </main>
+    <footer>
         <div class="copyright">© Kale Dentistry 2023</div>
     </footer>
-
+    <script src="./javascript/hamburger.js"></script>
 </body>
 </html>
