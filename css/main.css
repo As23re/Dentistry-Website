@@ -6,12 +6,12 @@
 }
 
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
 }
 
 @font-face {
     font-family: 'Nova Slim';
-    src: url(/ResponsiveWeb/fonts/NovaSlim-Regular.ttf);
+    src: url(/fonts/NovaSlim-Regular.ttf);
 }
 
 .backHome img{
@@ -77,32 +77,38 @@ header nav a:hover{
 /* Header Banner */
 
 .header-banner {
-    background-image: url(/ResponsiveWeb/images/hair-flipWEB.webp);
+    background-image: url(/images/hair-flipWEB.webp);
     background-size: cover;
     background-repeat: no-repeat;
     width: 99vw;
-    height: 750px;
+    /* height: 750px; */
+    height: 60vh;
+    position: relative;
 }
 
 .welcome{
+    /* width: 800px; */
+    /* height: 750px; */
+    /* top: 80px; */
+
     position: absolute;
-    width: 800px;
-    height: 750px;
     background: rgba(105, 196, 114, 0.6);
     border-radius: 400px 0px 0px 400px;
-    right: 0px;
-    top: 80px;
+    right: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
     letter-spacing: 1rem;
+    height: 100%;
+    width: 40%;
 }
 
 .welcome h1{
     font-size: 35px;
     padding: 30px;
+    text-align: center;
 }
 
 .welcome button{
@@ -133,8 +139,10 @@ header nav a:hover{
     background-color: rgba(255, 255, 255, 0.7);
     position: absolute;
     left: 0;
-    top: 250px;
-    width: 400px;
+    /* top: 200px; */
+    top: 20%;
+    width: 23%;
+    /* width: 400px */
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -182,10 +190,11 @@ header nav a:hover{
     width: 250px;
     height: 50px;
     position: absolute;
-    left: 70px;
+    /* left: 70px; */
     bottom: -20px;
     font-size: 20px;
     color: white;
+    align-self: center;
 }
 
 .opening-hours button:hover{
@@ -198,11 +207,12 @@ header nav a:hover{
     height: 55px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     color: white;
-    font-size: 20px;
+    font-size: 100%;
     letter-spacing: 0.5rem;
+    text-align: center;
 }
 
 /* Our Story */
@@ -213,17 +223,22 @@ header nav a:hover{
     position: relative;
     top: 50px;
     width: 99vw;
-    height: 450px;
+    height: 38vh;
+    /* height: 450px; */
 }
 
 .about img{
     position: absolute;
-    width: 478px;
-    height: 460px;
+    /* width: 478px;
+    height: 460px; */
+    width: 26vw;
+    height: 40vh;
     border-radius: 50%;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
-    left: 150px;
-    top: 20px;
+    /* left: 150px;
+    top: 20px; */
+    left: 8%;
+    top: 2%;
 }
 
 .about-title{
@@ -236,7 +251,7 @@ header nav a:hover{
     padding-right: 20px;
     position: relative;
     top: 30px;
-    left: 400px;
+    left: 25%;
 }
 
 .about-title h4{
@@ -690,168 +705,54 @@ footer a{
 
 /* Media Queries */
 
-/* Desktop/Laptops */
-/* @media screen and (max-width: 1920px) and (min-width: 1281px){
-    
-    ul li a:hover{
-        color: greenyellow;
-    }
-
-    .services{
-        height: 35rem;
-    }
-
-    .services-container{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-
-    figure img:hover{
-        opacity: 90%;
-    }
-
-    .team{
-        height: 35rem;
-    }
-
-    .location{
-        height: 35rem;
-    }
-
-    footer{
-        height: 8rem;
-    }
-
-    .map iframe{
-        width: 350px;
-        height: 350px;
-    } 
-} */
-
-/* Tablet */
 @media screen and (max-width: 1280px) and (min-width: 461px){
 
-    .services{
-        height: 20rem;
+    header nav{
+        top: 5px;
+        width: 400px;
     }
 
-    .services-container{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        position: relative;
+    .header-banner {
+        height: 99vh;
+        width: 99vw;
     }
 
-    .team{
-        height: 20rem;
+    .welcome{
+        height: 100%;
     }
 
-    .team-container{
-        margin: auto;
-        gap: 0;
+    .contact-bar{
+        font-size: 90%;
     }
 
-    .team-container figure{
-        text-align: center;
+    .about{
+        height: 80vh;
     }
 
-    .text h5{
-        text-align: center;
+    .about img{
+        top: 3%;
+        left: 2%;
+        width: 28%;
+        height: 70%;
     }
 
-    [class^="staff0"] {
-        display: flex;
-        flex-direction: column;
-   }
-
-    .location{
-        height: 20rem;
+    .about-title{
+        left: 10%;
     }
 
-    .map iframe{
-        width: 350px;
-        height: 350px;
-    } 
-
-    footer{
-        font-size: 0.8rem;
-        height: 5rem;
-    }
-
-    .links a{
-        padding: 0.5rem;
-    }
    
 }
+
+/* Tablet */
+@media only screen and (min-width: 768px){
+
+}
+
 
 /* Phone */
 @media screen and (max-width: 460px){
    
-    nav ul li a{
-        font-size: 78%;
-    } 
-    
-    .services{
-        height: 20rem;
-    }
-
-    .services-container{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        position: relative;
-    }
-
-    .services-container figure img{
-        max-width: 100%;
-    }
-
-    .team{
-        height: 20rem;
-    }
-
-    .team-container{
-        margin: auto;
-        gap: 0;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
-
-    .team-container figure{
-        text-align: center;
-    }
-
-    .text h5{
-        text-align: center;
-    }
-
-    [class^="staff0"] {
-        display: flex;
-        flex-direction: column;
-        padding: 3%;
-   }
-
-    .location{
-        height: 20rem;
-    }
-
-    .map iframe{
-        width: 350px;
-        height: 350px;
-    } 
-
-    footer{
-        font-size: 0.8rem;
-        height: 5rem;
-    }
-    
-    footer span{
-        width: 50%;
-    }
-
-    .links{
-        width: 50%;
-    }
-
-    .links a{
-        padding: 2%;
+    .welcome{
+        display: none;
     }
 } 
