@@ -28,11 +28,11 @@ header{
 
 /* Kale Dentistry Logo */
 
-.logo{width: 70%; display: flex; flex-direction: row; justify-content: space-around; align-items: center;}
+.logo{display: flex; flex-direction: row; justify-content: space-around; align-items: center;}
 
 .logo img{width: 20%; height: auto;}
 
-.logo a{text-decoration: none; color:#48BD85; font-size: 180%;}
+.logo a{text-decoration: none; color:#48BD85; font-size:1.5em;}
 
 /* Hamburger Menu / Navigational Bar */
 
@@ -242,9 +242,7 @@ footer{background-color: #393939; text-align: center; color: white; padding: 5%;
 
     .logo{width: 20%; justify-content: space-around;}
 
-    .logo a{font-size: 250%;}
-
-    .navbar{width: 30%; font-size: 150%;}
+    .navbar{width: 30%;}
 
     .header-nav a:hover{cursor: pointer; background-color: rgba(105, 196, 114, 0.6); border-radius: 50px;}
 
@@ -290,7 +288,7 @@ footer{background-color: #393939; text-align: center; color: white; padding: 5%;
 
     .about-bio{font-size: 16px; letter-spacing: 0.2rem; margin-top: 0; width: 57%; align-self:flex-end; margin-right: 5%; padding: 2%;}
 
-    .about img{width: 550px; max-width: 100%; top: -15%; margin-left: 5%; left: 0;}
+    .about img{width:30%; max-width: 100%; top: -15%; margin-left: 5%; left: 0;}
 
     .about button{width: 30%; font-size: 120%; margin-top: 2%;}
 
@@ -359,10 +357,3 @@ footer{background-color: #393939; text-align: center; color: white; padding: 5%;
     .gmap_canvas{width: 70%;}
 
 }
-
-/* @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
-
-    /* Titles */
-
-    [class$='title']{}
-} */
